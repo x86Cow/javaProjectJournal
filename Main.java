@@ -4,13 +4,34 @@
  * Date Started: 1/7/23
  */
 
+import java.util.Scanner;
+
 class Main{
     
+    private static Scanner input = new Scanner(System.in);
     private static ProjectBook test = new ProjectBook();
+    private static int result = -1;
 
     public static void main(String[] args) {
-        System.out.println(test.getTitle());
-        test.setTitle("First Project");
-        System.out.println(test.getTitle());
+        
+        do{
+            System.out.println("What would you like to do? \n 0: View Basic Notebook info \n 1: Create notebook \n 4: exit");
+            System.out.println("input: ");
+            result = Integer.parseInt(input.nextLine());
+            clearScreen();
+        } while(result != 4);
     }
+
+    private static void clearScreen() {  
+    System.out.print("\033[H\033[2J");  
+    System.out.flush();  
+    }
+
+    private static void optionSelection() {
+        switch(result) {
+            case 0:
+                System.out.println("notebooks: \n" + test.getTitle() + ": " + test.getDescription());
+        }
+
+   }
 }
