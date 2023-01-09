@@ -9,9 +9,10 @@ import java.text.SimpleDateFormat;
 public class ProjectBook {
     private SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");  
 
+    private Date date;
     private String title;
     private String description;
-    private Date date;
+    private Entry = new Entry
 
 
     public ProjectBook() {
@@ -48,6 +49,7 @@ public class ProjectBook {
     public void SetDescription(String desc) {
         description = desc;
     }
+
 
     
 }
