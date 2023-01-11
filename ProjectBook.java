@@ -29,7 +29,7 @@ public class ProjectBook {
     }
 
     public String getDescription() {
-            return description;
+        return description;
     }
 
     // SETTERS
