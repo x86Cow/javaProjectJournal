@@ -2,14 +2,8 @@
 
 import java.util.ArrayList;
 
-// dates
-import java.util.Date;  
-import java.text.SimpleDateFormat;
 
 public class ProjectBook {
-    private SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");  
-
-    private Date date;
     private String title;
     private String description;
     private Entry entry = new Entry();
@@ -19,7 +13,6 @@ public class ProjectBook {
     public ProjectBook() {
         title = "unnamed";
         description = "No description";
-        date = new Date();
 
         entry = new Entry();
         entries.add(entry);
@@ -28,7 +21,6 @@ public class ProjectBook {
     public ProjectBook(String name, String desc) {
         title = name;
         description = desc;
-        date = new Date();
     }
 
     // GETTERS
@@ -36,12 +28,8 @@ public class ProjectBook {
         return title;
     }
 
-    public String getDate() {
-        return formatter.format(date);
-    }
-
     public String getDescription() {
-        return description;
+            return description;
     }
 
     // SETTERS
