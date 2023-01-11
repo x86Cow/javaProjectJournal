@@ -11,7 +11,6 @@ class Main{
     private static Scanner input = new Scanner(System.in);
     private static ProjectBook test = new ProjectBook();
     private static int result = -1;
-
     public static void main(String[] args) {
 
         do{
@@ -23,6 +22,7 @@ class Main{
 
             journalFormatter(10);
         } while(result != 4);
+    clearScreen();
     }
 
     private static void clearScreen() {  

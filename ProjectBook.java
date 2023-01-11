@@ -12,7 +12,8 @@ public class ProjectBook {
     private Date date;
     private String title;
     private String description;
-    private Entry = new Entry
+    private Entry entry = new Entry();
+    private ArrayList<Entry> entries = new ArrayList<Entry>();
 
 
     public ProjectBook() {
@@ -20,11 +21,13 @@ public class ProjectBook {
         description = "No description";
         date = new Date();
 
+        entry = new Entry();
+        entries.add(entry);
     }
     
     public ProjectBook(String name, String desc) {
         title = name;
-        desc = description;
+        description = desc;
         date = new Date();
     }
 

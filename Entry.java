@@ -9,7 +9,7 @@ public class Entry {
         // date
     }
 
-    public Entry(String name, string main) {
+    public Entry(String name, String main) {
         entryName = name;
         entryMain = main;
     }
@@ -29,3 +29,4 @@ public class Entry {
     public void setEntryMain(String main) {
         entryMain = main;
     }
+}
